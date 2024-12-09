@@ -1,0 +1,470 @@
+/******* CSS *******/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+/* Header Start */
+
+header{
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(images/home_bg.jpg) ;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*  */
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    /*background-color:#161618; */
+    align-items: center;
+     background-color: rgba(0,0,0,0.2);  /*  navbar خلفية شفافة لل */
+    
+    
+    
+}
+
+#navbar img{
+    width: 60px;
+    margin-left: 100px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    margin-right: 100px;
+}
+
+
+#navbar ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+
+#navbar ul li a:hover{
+    border-bottom:2px solid orange;
+    transition: 0.1s ;
+}
+
+header .content{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    height:75vh;
+}
+
+header .content h1{
+    font-size: 40px;
+    color: #fff;
+}
+
+header .content h2{
+    margin:20px 0 40px 0 ;
+    color:#fff;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+   /* box-shadow: 10px 10px 8px #160d01; */
+    
+    
+}
+.primary-text{
+    color: orange;
+    
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+}
+
+.btn-primary{
+    color:#fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    font-size: 20px;
+    font-weight: 500;
+    /* background-color: ; */
+}
+
+.btn-primary:hover{
+    background-color:#FF6067;
+    transition: 0.3s;
+}
+
+/* Headeer End */
+
+
+/* About Start */
+.container{
+
+    /* background-color: red; */
+    max-width: 1100px;
+    margin: auto;
+}
+
+#about{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+#about .title{
+    text-align: center;
+    margin-bottom: 4rem ;
+}
+
+#about h2{
+    font-size: 40px;
+    color: #383848;
+    margin-bottom: 20px;
+}
+
+#about .title p{
+    font-weight: 600;
+    color: #9a9a9a;
+}
+
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .about-content img{
+    width: 400px;
+}
+
+#about .about-content p{
+    color:#9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.btn-secondary{
+    color:#fff;
+    text-decoration: none;
+    background-color: #383848;
+    margin-top: 2rem;
+}
+
+.btn-secondary:hover{
+    background-color: #e4b95b;
+}
+
+/* About End */
+
+/* Offers Start */
+
+#offers{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    background: url(images/offer-background.jpg) center center/cover fixed;
+}
+
+#offers .title{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem ;
+}
+
+#offers h2{
+    font-size: 40px;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+#offers .title p{
+    font-weight: 600;
+    color: #fff;
+}
+
+#offers .offer-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#offers .offer-items img{
+    width: 180px;
+}
+
+#offers .offer-items h3{
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+#offers .offer-items p{
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight:300 ;
+    margin-bottom: 15px;
+}
+
+#offers .offer-items span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 7px;
+}
+
+/* Offers End */
+
+/* Menu Start */
+
+#menu{
+    background-color: #f4f4f4;
+    padding: 5rem 0;
+}
+
+#menu .title{
+    text-align: center;
+    
+
+}
+
+#menu h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #383848;
+}
+
+#menu .title p{
+    font-weight: 600;
+    color: #9a9a9a;
+
+}
+
+#menu .menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu .menu-items .item img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+
+}
+
+#menu .menu-items .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:40px;
+}
+
+#menu .menu-items .item h3{
+    color:#383848;
+    padding-bottom: 10px;
+}
+
+#menu .menu-items .item span{
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+#menu .btn{
+    background-color:  #383848;
+    color:#fff;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+#menu .btn:hover{
+    background-color: #e4b95b;
+}
+/* Menu End */
+
+/* day time start */
+
+#daytime{
+    background: url(images/daytime_bg.jpeg) center center/cover fixed no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+#daytime .daytime-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    /* padding; */
+}
+
+#daytime .daytime-items h3{
+    font-size: 32px;
+    margin: 20px 0 10px 0;
+}
+
+#daytime .daytime-items p{
+    font-weight: 500;
+}
+
+/* day time end */
+
+/* Gallery start */
+
+#gallery{
+    background: url(images/offer-background.jpg) center center/cover no-repeat;
+    padding: 4rem 0 4rem 0;
+}
+
+#gallery h2{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#gallery .img-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#gallery .img-gallery img{
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin:20px;
+    opacity: 0.8;
+}
+
+#gallery .img-gallery img:hover{
+    opacity: 1;
+}
+
+/* Gallery end */
+
+/* Contect Start */
+
+#contect{
+    padding: 5rem 0;
+    background-color: #f4f4f4;
+
+}
+
+#contect .container{
+    max-width: 900px;
+}
+
+#contect .contect-data{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#contect .contect-data .contect-info{
+    width: 50%;
+}
+
+#contect .contect-data .contect-info div{
+    margin: 30px 0;
+    line-height: 1.7;
+}
+
+#contect .contect-data .contect-info h3{
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+
+#contect .contect-data .contect-info p{
+    letter-spacing: 1px;
+    color: #9a9a9a;
+}
+
+#contect .contect-data .contect-info i{
+    color: #e4b95b;
+    margin-right: 5px;
+}
+
+#contect .contect-data .contect-info a i{
+    color: #fff;
+    background-color: #383848;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#contect .contect-data .contect-info a i:hover{
+    background-color: #e4b95b;
+    color: #383848;
+}
+
+form{
+    width: 50%;
+
+}
+
+form input , textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #e3e2dd;
+}
+
+#contect .btn{
+    background-color: #e4b95b;
+    color: #fff;
+}
+
+#contect .btn:hover{
+    background-color: #383848;
+    cursor: pointer;
+}
+
+/* Contect End */
+
+/* Footer Start */
+
+#footer{
+    background-color: #383848;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+
+
+
+
